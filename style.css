@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(165, 165, 165);
+    background-color:rgb(252, 182, 182);
     display: flex;
     justify-content: center;
 }
@@ -7,12 +7,20 @@ body{
     height:  800px;
     width: 800px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color:rgb(190, 180, 164);
-};
-#boxcontainer .square {
+}
+.square {
+    flex: 1 1 0;
+    min-width: 5%;
     background-color:rgb(171, 216, 241);
-    width: auto;
+    border: solid black;
+    border-width: 2px 2px;
+    border-radius: 7px;
+    margin: 2px;
+    transition: all 0.6s ease;
+}
+.square:hover{
+    background-color: pink;
 }
