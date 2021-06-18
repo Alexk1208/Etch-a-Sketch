@@ -1,26 +1,53 @@
-body{
-    background-color:rgb(252, 182, 182);
-    display: flex;
-    justify-content: center;
+html{
+    background-color: blanchedalmond;
+
+}
+
+#pageTitle{
+     margin: auto;
+     font-size: 80px;
+     font-style: italic;
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 30px;
+     animation: color-change 3s infinite alternate;
+}
+@keyframes color-change {
+    0%{color: rgb(146, 174, 184);}
+    25%{color:rgb(180, 216, 216)}
+    50%{color: rgb(195, 233, 233);}
+    75%{color:rgb(160, 217, 252)}
+    100%{color: rgb(165, 208, 252)}
+}
+#buttonBox {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+#resetButton{
+    padding: 10px;
+    background-color: rgb(169, 182, 206);
+    border-radius: 10px;
+    font-style: italic;
 }
 #boxContainer  {
-    height:  800px;
-    width: 800px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color:rgb(190, 180, 164);
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border: solid black;
+    border-width: 1px 1px;
 }
 .square {
-    flex: 1 1 0;
-    min-width: 5%;
-    background-color:rgb(171, 216, 241);
+    flex: 1;
+    background:rgb(207, 162, 238);
     border: solid black;
-    border-width: 2px 2px;
-    border-radius: 7px;
-    margin: 2px;
-    transition: all 0.6s ease;
-}
-.square:hover{
-    background-color: pink;
+    border-width: 0px 1px;
 }
